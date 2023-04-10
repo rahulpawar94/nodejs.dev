@@ -10,7 +10,7 @@ How to make a Node.js CLI program interactive?
 
 Node.js since version 7 provides the [`readline` module](https://nodejs.org/api/readline.html) to perform exactly this: get input from a readable stream such as the `process.stdin` stream, which during the execution of a Node.js program is the terminal input, one line at a time.
 
-```js
+``js
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -36,7 +36,7 @@ The simplest way is to use the [`readline-sync` package](https://www.npmjs.com/p
 
 A more complete and abstract solution is provided by the [Inquirer.js package](https://github.com/SBoudrias/Inquirer.js).
 
-You can install it using `npm install inquirer`, and then you can replicate the above code like this:
+You can install it using `npm i inquirer`, and then you can replicate the above code like this:
 
 ```js
 const inquirer = require('inquirer');
